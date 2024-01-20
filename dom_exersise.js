@@ -1,3 +1,8 @@
-var planet = document.getElementById("greenplanet");
-planet.innerHTML = "Red Alert: hit by phaser fire!";
-// Console JS: dom_exersise.js:2 Uncaught TypeError: Cannot set properties of null (setting 'innerHTML')
+function init() {
+  var planet = document.getElementById("greenplanet");
+  planet.innerHTML = "Red Alert: hit by phaser fire!";
+}
+
+window.onload = init;
+
+// Browser (object window): Green Planet: Red Alert: hit by phaser fire!
